@@ -18,7 +18,7 @@ import {
 } from "@babylonjs/core";
 
 function backgroundMusic(scene: Scene): Sound{
-  let music = new Sound("music", "./assets/audio/arcade-kid.mp3", scene,  null ,
+  let music = new Sound("music", "./assets/audio/a.mp3", scene,  null ,
    {
       loop: true,
       autoplay: true

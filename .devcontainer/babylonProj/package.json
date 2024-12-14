@@ -12,14 +12,19 @@
     "collision03build": "vite build collision03",
     "collision03preview": "vite preview collision03 --host",
     "multibuild": "vite build multi",
-    "multipreview": "vite preview multi --host"
-
+    "multipreview": "vite preview multi --host",
+    "shapes01build": "vite build shapes01",
+    "shapes01preview": "vite preview shapes01 --host",
+    "villagebuild": "vite build village",
+    "villagepreview": "vite preview village --host",
+    "guibuild": "vite build gui04",
+    "guipreview": "vite preview gui04 --host"
   },
   "devDependencies": {
-    "@babylonjs/core": "^7.40.0",
+    "@babylonjs/core": "^7.40.1",
     "@babylonjs/havok": "^1.3.10",
-    "@babylonjs/inspector": "^7.40.0",
-    "@babylonjs/loaders": "^7.40.0",
+    "@babylonjs/inspector": "^7.40.1",
+    "@babylonjs/loaders": "^7.40.1",
     "typescript": "~5.6.2",
     "vite": "^5.4.11"
   }
