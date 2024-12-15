@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--https://bootstrap-cheatsheet.themeselection.com/-->
-<!--https://getbootstrap.com/docs/5.3/getting-started/introduction/-->
-<!--https://blog.getbootstrap.com/ -->
-<!--https://www.jsdelivr.com/package/npm/bootstrap -->
-<!--https://www.lipsum.com/  -->
 
 <html lang="en">
 <head>
@@ -15,24 +10,22 @@
 </head>
 <body>
   <div class="container-fluid py-5 text-start text-sm-center" >
-    <h1 class="display-5 fw-bold">My first Bootstrap Page</h1>
-    <p class="col-md-8 fs-4"><p>Resize this responsive page to see the effect!</p>
+    <h1 class="display-5 fw-bold">JavaScript: Programming Fundamentals</h1>
+    <p class="col-md-8 fs-4"><p>By Benjamin Cook (B00869649)</p>
   </div>
 
   <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/icon.png" alt="logo" width="30" height="30"></a>
+      <a class="navbar-brand" href="#"><img src="assets/woman.png" alt="logo" width="30" height="30"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarBasic">
         <ul class="navbar-nav me-auto mb-2 mb-xl-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Design</a>
-          </li>
+         
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Games
@@ -47,26 +40,14 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Games
+              Documentation
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Fortnite</a></li>
-              <li><a class="dropdown-item" href="#">Ratchet & Clank: Rift Apart</a></li>
-              <li><a class="dropdown-item" href="#">Splatoon 3</a></li>
+              <li><a class="dropdown-item" href="./dev.md/">Element5</a></li>
             </ul>
           </li>
           
-        <!--  Remove disabled link and search
-        <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-          -->
+     
       </div>
     </div>
   </nav>  
@@ -75,26 +56,23 @@
 <div class="container-fluid mt-3">
   <div class="row">
     <div class="col-sm-4">
-      <h3 style="text-align: center;">Fortnite</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3 style="text-align: center;">Football</h3>
+      <p>I enjoy seeing the developments of tech within sports.</p>
+      <p>Football inspired me to research and develop my own ideas.</p>
     </div>
     <div class="col-sm-4">
-      <h3 style="text-align: center;">Ratchet & Clank: Rift Apart</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3 style="text-align: center;">Motorsports</h3>
+      <p>Motorsports are where most innovations for the automotive industry come from.</p>
+      <p>F1 in particular is the leader in this especially with computing.</p>
     </div>
     <div class="col-sm-4">
-      <h3 style="text-align: center;">Splatoon 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3 style="text-align: center;">Gaming</h3>        
+      <p>Gaming kickstarted my interest in coding.</p>
+      <p>Cyberpunk made me fall back in love with an industry I felt was becoming stale.</p>
     </div>
   </div>
 </div>
 
-
-
-<!-- Carousel https://getbootstrap.com/docs/5.3/components/carousel/ -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
     <!-- Indicators/dots -->
@@ -104,27 +82,27 @@
       <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     </div>
     
-    <!-- The slideshow/carousel -->
+    <!-- carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/fortnite.jpg" alt="Fortnite" class="d-block" style="width:100%">
+        <img src="assets/blackburn.jpg" alt="blackburnfc" class="d-block" style="width:100%">
         <div class="carousel-caption">
-          <h3 style="background-color: black;">Fortnite</h3>
-          <p style="background-color: black;">A game by Epic Games!</p>
+          <h3 style="background-color: black;">Blackburn Rovers FC</h3>
+          <p style="background-color: black;">Best team in Lancashire.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/ratchetandclank.jpg" alt="Ratchet & Clank" class="d-block" style="width:100%">
+        <img src="assets/max.jpg" alt="max2023" class="d-block" style="width:100%">
         <div class="carousel-caption">
-          <h3 style="background-color: black;">Ratchet & Clank: Rift Apart</h3>
-          <p style="background-color: black;">A game by Insomniac Games!</p>
+          <h3 style="background-color: black;">Max Verstappen</h3>
+          <p style="background-color: black;">My GOAT.</p>
         </div> 
       </div>
       <div class="carousel-item">
-        <img src="assets/splatoon3.jpg" alt="Splatoon 3" class="d-block" style="width:100%">
+        <img src="assets/cyber.jpg" alt="cyberpunk2077" class="d-block" style="width:100%">
         <div class="carousel-caption">
-          <h3 style="background-color: black;">Splatoon 3</h3>
-          <p style="background-color: black;">A game by Nintendo Entertainment Planning & Development!</p>
+          <h3 style="background-color: black;">Cyberpunk 2077</h3>
+          <p style="background-color: black;">One of my favourite games of recent. Made by CDProjekt Red.</p>
         </div>  
       </div>
     </div>
@@ -138,49 +116,13 @@
     </button>
   </div>
 
-   <!-- Card https://getbootstrap.com/docs/5.3/components/card/ -->
+<!-- card -->
   <div class="card" style="width: 300px;">
-    <img src="assets/icon.jpg" class="card-img-top" alt="...">
+    <img src="assets/me.jpg" class="card-img-top" alt="me">
     <div class="card-body text-center">
-        <h5 class="card-title">Derek Turner</h5>
-        <p class="card-text">Derek works at UWS. Specialising in music technology (live sound), game development (babylonJS); and also web and mobile development (internet technologies including react and remix).</p>
-        <a href="https://research-portal.uws.ac.uk/en/persons/derek-turner" class="btn btn-primary">View Profile</a>
-    </div>
-</div>
-
-<!-- Accordian https://getbootstrap.com/docs/5.3/components/accordion/ -->
-<div class="m-4">
-    <div class="accordion" id="myAccordion">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. What is HTML?</button>									
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                <div class="card-body">
-                    <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. What is Bootstrap?</button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
-                <div class="card-body">
-                    <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. What is CSS?</button>                     
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                <div class="card-body">
-                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
-                </div>
-            </div>
-        </div>
+        <h5 class="card-title">Benjamin Cook</h5>
+        <p class="card-text">Born in England raised in Scotland with a passion for technology and innovation. I have strong interests in aviation and automotive developments.</p>
+        <a href="https://www.linkedin.com/in/benjamin-cook-626111263/" class="btn btn-primary">View Profile</a>
     </div>
 </div>
 
