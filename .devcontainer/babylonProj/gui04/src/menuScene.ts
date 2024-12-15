@@ -19,14 +19,13 @@ import {
   } from "@babylonjs/core";
   import * as GUI from "@babylonjs/gui";
  
-  //----------------------------------------------------
 
   function createText(scene: Scene, theText: string, x: string, y: string, s: string, c: string, advtex) {
     let text = new GUI.TextBlock();
     text.text = theText;
     text.color = c;
     text.fontSize = s;
-    text.fontWeight = "bold"; //can add parameter for this if you wish
+    text.fontWeight = "bold"; 
     text.left = x;
     text.top = y;
     advtex.addControl(text);
@@ -71,10 +70,9 @@ import {
         return button;
  }
 
-  //----------------------------------------------------------------------------------------------
-  //Create Skybox
+  
   function createSkybox(scene: Scene) {
-    //Skybox
+    
     const skybox = MeshBuilder.CreateBox("skyBox", {size:150}, scene);
 	  const skyboxMaterial = new StandardMaterial("skyBox", scene);
 	  skyboxMaterial.backFaceCulling = false;
@@ -110,8 +108,7 @@ import {
     return camera;
   }
  
-  //----------------------------------------------------------
-  //BOTTOM OF CODE - MAIN RENDERING AREA FOR YOUR SCENE
+  
   export default function menuScene(engine: Engine) {
     interface SceneData {
       scene: Scene;
@@ -124,9 +121,6 @@ import {
       camera: Camera;
     }
   
-    //let that: SceneData = { scene: new Scene(engine) };
-    
-    //----------------------------------------------------------
     let scene = new Scene(engine);
     let advancedTexture = GUI.AdvancedDynamicTexture.CreateFullscreenUI("myUI", true);
     let textBG = createRectangle(scene, "300px", "100px", "0px", "-200px", 20, "white", 4, "purple", advancedTexture);
@@ -134,7 +128,7 @@ import {
     let button1 = createSceneButton(scene, "but1", "START", "0px", "-75px", advancedTexture);
 
     let skybox = createSkybox(scene);
-    //Scene Lighting & Camera
+ 
     let hemiLight = createHemiLight(scene);
     let camera = createArcRotateCamera(scene);
     
@@ -150,4 +144,4 @@ import {
     };
     
     return that;
-  }  //----------------------------------------------------
+  }  

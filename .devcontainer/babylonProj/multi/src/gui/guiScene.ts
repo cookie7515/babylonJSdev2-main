@@ -19,14 +19,13 @@ import {
   } from "@babylonjs/core";
   import * as GUI from "@babylonjs/gui";
  
-  //----------------------------------------------------
 
   function createText(scene: Scene, theText: string, x: string, y: string, s: string, c: string, advtex) {
     let text = new GUI.TextBlock();
     text.text = theText;
     text.color = c;
     text.fontSize = s;
-    text.fontWeight = "bold"; //can add parameter for this if you wish
+    text.fontWeight = "bold"; 
     text.left = x;
     text.top = y;
     advtex.addControl(text);
@@ -57,16 +56,9 @@ import {
         button.cornerRadius = 20;
         button.background = "purple";
 
-        /*
-        const buttonClick = new Sound("MenuClickSFX", "./audio/menu-click.wav", scene, null, {
-          loop: false,
-          autoplay: false,
-        });
-        */
-
         button.onPointerUpObservable.add(function() {
             console.log("THE BUTTON HAS BEEN CLICKED");
-           // buttonClick.play();
+           
             setSceneIndex(index -1);
         });
         advtex.addControl(button);
@@ -90,8 +82,7 @@ import {
   return camera;
 }
   
-  //----------------------------------------------------------
-  //BOTTOM OF CODE - MAIN RENDERING AREA FOR YOUR SCENE
+ 
   export default function menuScene(engine: Engine) {
     interface SceneData {
       scene: Scene;
@@ -102,9 +93,7 @@ import {
       camera: Camera;
     }
   
-    //let that: SceneData = { scene: new Scene(engine) };
     
-    //----------------------------------------------------------
     let scene = new Scene(engine);
     let advancedTexture = GUI.AdvancedDynamicTexture.CreateFullscreenUI("myUI", true);
     var button1 = createSceneButton(scene,"but1", "1",1,"-150px", "120px", advancedTexture);
@@ -123,4 +112,4 @@ import {
     };
     
     return that;
-  }  //----------------------------------------------------
+  }  
